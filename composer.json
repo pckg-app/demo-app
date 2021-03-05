@@ -12,7 +12,8 @@
   "require": {
     "pckg-app/frontend": "dev-master",
     "pckg/mail": "dev-master",
-    "pckg/generic": "dev-master"
+    "pckg/generic": "dev-master",
+    "pckg/helpers-js": "dev-master"
   },
   "require-dev": {
     "pckg-app/frontend-dev": "dev-master"

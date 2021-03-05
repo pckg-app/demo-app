@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="{{ _localeManager.getCurrent() }}">
+<head>
+    {% do _metaManager.addCharset().addViewport().addContentType().addContentLanguage().addCdnPrefetch().addInternetExplorer().addCSRF() %}
+    {{ _metaManager.getMeta('header') | raw }}
+    {{ _seoManager.getSeoTags() | raw }}
+    {{ _seoManager.getFaviconTags() | raw }}
+    {{ _assetManager.getMeta(['css', 'less'], ['libraries', 'main', 'vue', 'footer']) | raw }}
+    {{ _assetManager.getMeta(['js'], ['libraries', 'config', 'main', 'headerLast']) | raw }}
+    <!-- demo-app -->
+</head>
+<body>
+
+<component id="vue-app" data-app :is="layoutComponent">{% block content %}{{ content | raw }}{% endblock %}</component>
+
+<script>
+    var Pckg = Pckg || {};
+    Pckg.data = {{ (data ? data : {}) | json_encode | raw }};
+    Pckg.auth = {user: {{ _auth.getUserDataArray() | json_encode | raw }}};
+
+    //moment.locale(Pckg.config.locale.current);
+</script>
+
+{{ _assetManager.getMeta(['js'], ['vue', 'footer']) | raw }}
+{{ _assetManager.getExternal() | raw }}
+{{ _metaManager.getMeta('footer') | raw }}
+
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:100,300,400,700,900&amp;subset=latin-ext" rel="stylesheet">
+
+{% if _env.isDev() and _debugBar %}
+    {% set renderer = _debugBar.getJavascriptRenderer() %}
+    {% do renderer.setOpenHandlerUrl('/open.php').setOptions({enable_jquery_noconflict:false}) %}
+    {% do _debugBar.sendDataInHeaders(true) %}
+    {{ renderer.renderHead() | raw }}
+    {{ renderer.render() | raw }}
+{% endif %}
+
+</body>
+</html>
