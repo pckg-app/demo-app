@@ -1,0 +1,40 @@
+{
+  "name": "pckg-app/demo-app",
+  "description": "Demo app",
+  "homepage": "https://github.com/pckg-app/demo-app",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Bojan Rajh",
+      "email": "schtr4jh@schtr4jh.net"
+    }
+  ],
+  "require": {
+    "pckg-app/frontend": "dev-master",
+    "pckg/mail": "dev-master",
+    "pckg/generic": "dev-master"
+  },
+  "require-dev": {
+    "pckg-app/frontend-dev": "dev-master"
+  },
+  "scripts": {
+    "test": [
+      "true || vendor/bin/phpunit --help --stop-on-defect",
+      "true || vendor/bin/phpcloc cloc app/",
+      "vendor/bin/phpstan analyse app/ --level=1",
+      "vendor/bin/phpcs --extensions=php --warning-severity=8 --error-severity=1 --standard=PSR12 --parallel=2 -p app/",
+      "vendor/bin/codecept run"
+    ],
+    "autofix": [
+      "vendor/bin/phpcs --extensions=php --report-diff=phpcs.diff --warning-severity=8 --error-severity=1 --standard=PSR12 --parallel=2 -p app/"
+    ],
+    "autopatch": [
+      "patch -p0 -ui phpcs.diff && rm phpcs.diff"
+    ]
+  },
+  "scripts-descriptions": {
+    "test": "Run all tests and quality checks"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
