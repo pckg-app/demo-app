@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "203f29653bd053b8907747ec75658c83",
+    "content-hash": "d145eae8c6a3eb055cca79b8ba45bbd7",
     "packages": [
         {
             "name": "assetic/framework",
@@ -1641,12 +1641,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pckg/database.git",
-                "reference": "48f38067cfd83d5b30cfa600d038a1e689616f28"
+                "reference": "609e21ee63e7b6c139543c174a686719e4d4facf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pckg/database/zipball/48f38067cfd83d5b30cfa600d038a1e689616f28",
-                "reference": "48f38067cfd83d5b30cfa600d038a1e689616f28",
+                "url": "https://api.github.com/repos/pckg/database/zipball/609e21ee63e7b6c139543c174a686719e4d4facf",
+                "reference": "609e21ee63e7b6c139543c174a686719e4d4facf",
                 "shasum": ""
             },
             "require": {
@@ -1693,7 +1693,7 @@
                 "issues": "https://github.com/pckg/database/issues",
                 "source": "https://github.com/pckg/database/tree/master"
             },
-            "time": "2021-03-05T18:26:08+00:00"
+            "time": "2021-03-06T12:10:47+00:00"
         },
         {
             "name": "pckg/framework",
@@ -1701,12 +1701,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pckg/framework.git",
-                "reference": "c289fcad206257ed565b8193c263096ee088065b"
+                "reference": "9cc754f22c6d2daba16225fd35ce3c21ac3c98aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pckg/framework/zipball/c289fcad206257ed565b8193c263096ee088065b",
-                "reference": "c289fcad206257ed565b8193c263096ee088065b",
+                "url": "https://api.github.com/repos/pckg/framework/zipball/9cc754f22c6d2daba16225fd35ce3c21ac3c98aa",
+                "reference": "9cc754f22c6d2daba16225fd35ce3c21ac3c98aa",
                 "shasum": ""
             },
             "require": {
@@ -1721,7 +1721,7 @@
                 "pckg/locale": "dev-master",
                 "rollbar/rollbar": "2.*",
                 "tgalopin/html-sanitizer": "dev-master",
-                "twig/twig": "1.*"
+                "twig/twig": ">=1 <3"
             },
             "require-dev": {
                 "defuse/php-encryption": "2.*",
@@ -1763,7 +1763,7 @@
                 "issues": "https://github.com/pckg/framework/issues",
                 "source": "https://github.com/pckg/framework/tree/master"
             },
-            "time": "2021-03-05T18:26:28+00:00"
+            "time": "2021-03-06T12:16:41+00:00"
         },
         {
             "name": "pckg/generic",
@@ -4208,21 +4208,22 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.44.2",
+            "version": "v2.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "138c493c5b8ee7cff3821f80b8896d371366b5fe"
+                "reference": "46a612ba1bbf6ee1c58acabacd868212ff8a2911"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/138c493c5b8ee7cff3821f80b8896d371366b5fe",
-                "reference": "138c493c5b8ee7cff3821f80b8896d371366b5fe",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/46a612ba1bbf6ee1c58acabacd868212ff8a2911",
+                "reference": "46a612ba1bbf6ee1c58acabacd868212ff8a2911",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.2.5",
-                "symfony/polyfill-ctype": "^1.8"
+                "php": ">=7.1.3",
+                "symfony/polyfill-ctype": "^1.8",
+                "symfony/polyfill-mbstring": "^1.3"
             },
             "require-dev": {
                 "psr/container": "^1.0",
@@ -4231,7 +4232,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.44-dev"
+                    "dev-master": "2.13-dev"
                 }
             },
             "autoload": {
@@ -4270,9 +4271,21 @@
             ],
             "support": {
                 "issues": "https://github.com/twigphp/Twig/issues",
-                "source": "https://github.com/twigphp/Twig/tree/v1.44.2"
+                "source": "https://github.com/twigphp/Twig/tree/2.x"
             },
             "funding": [
+                {
+                    "url": "https://certification.symfony.com/",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://live.symfony.com/",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://symfony.com/cloud/",
+                    "type": "custom"
+                },
                 {
                     "url": "https://github.com/fabpot",
                     "type": "github"
@@ -4282,7 +4295,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-01-05T10:10:05+00:00"
+            "time": "2020-07-05T13:08:05+00:00"
         }
     ],
     "packages-dev": [

@@ -1,46 +1,26 @@
 # DEPENDENCY MANAGERS - COMPOSER, BOWER, NODE / YARN
-vendor
-components
-node_modules
-
-# WWW
-www/css
-www/js
-www/img
-www/cache
-www/fonts
-www/media
-www/storage
+/vendor
+/components
+/node_modules
 
 # GIT
 !**/.gitkeep
 
 # STORAGE
-storage/**
-storage
-
-# LOGS
-logs/**
+/storage/
 
 # ENV
-.env*
+/.env*
 
 # DEV -.-
-sublime
-.idea
-phinx.yml
+/sublime
+/.idea
 
 # TESTS ;-)
-tests/_output/*
-tests/acceptance.suite.yml
-tests/_support/_generated/*
-codeception.yml
-
-# PCKG
-pckg.json
-
-# VAGRANT
-.vagrant/**
+/tests/_output/*
+/tests/acceptance.suite.yml
+/tests/_support/_generated/*
+/codeception.yml
 
 # NPM DEBUG
-npm-debug.log
+/npm-debug.log

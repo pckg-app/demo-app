@@ -6,7 +6,7 @@
         <header class="s-header-main text-center">
 
             <router-link to="/">
-                <img src="/static/logo.png" class="__logo-main"/>
+                <img src="/static/logo.png" class="__logo-main" />
             </router-link>
 
             <nav class="s-navigation-main">

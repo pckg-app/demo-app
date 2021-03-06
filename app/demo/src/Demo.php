@@ -3,6 +3,7 @@
 use OpenCode\Demo\Provider\Demo as DemoProvider;
 use Pckg\Framework\Provider;
 use Pckg\Framework\Response\Afterware\EncapsulateResponse;
+use Pckg\Manager\Middleware\SetSeoTitle;
 use Pckg\Manager\Provider\Manager;
 
 // @codingStandardsIgnoreLine
@@ -16,6 +17,13 @@ class Demo extends Provider
             Manager::class,
             Provider\Frontend::class,
             DemoProvider::class,
+        ];
+    }
+
+    public function middlewares()
+    {
+        return [
+            SetSeoTitle::class,
         ];
     }
 
@@ -35,6 +43,7 @@ class Demo extends Provider
             ],
             'footer' => [
                 path('build') . 'footer.css',
+                'less/app.less',
             ],
             'vue' => [
                 path('build') . 'footer.js',
