@@ -7,11 +7,11 @@ Demo implementation of [pckg](https://github.com/pckg) framework.
 # Features
 
 - See [pckg/skeleton](https://github.com/pckg/skeleton) for in-depth core feature description
-- Twig & Vue layout examples- `frontend.twig` & `frontend.vue`
+- Twig & Vue layout examples - `frontend.twig` & `frontend.vue`
 - Homepage & Contact page - `homepage.vue` & `contact.vue`
 - Vue & API routes examples - `Provider/Demo.php`
 - Asset registration - `Demo.php`
-- SEO optimization - `Provider/Demo.php`
+- SEO support - `Provider/Demo.php`
 - Static storage (logo)
 - Static database (Projects & Clients) + API with ORM
 - Almost-zero-code Webpack & Vue setup

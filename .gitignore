@@ -1,20 +1,22 @@
-# DEPENDENCY MANAGERS - COMPOSER, BOWER, NODE / YARN
-/vendor
-/components
-/node_modules
+# DEPENDENCY MANAGERS - COMPOSER, NPM / YARN
+/vendor/
+/components/
+/node_modules/
 
 # GIT
 !**/.gitkeep
 
 # STORAGE
-/storage/
+/storage/**
 
-# ENV
-/.env*
+# LOGS
+/logs/**
 
 # DEV -.-
-/sublime
 /.idea
+
+# ENV
+/.env
 
 # TESTS ;-)
 /tests/_output/*

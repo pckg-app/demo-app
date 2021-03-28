@@ -29,7 +29,7 @@
 </template>
 
 <script>
-import {Fetcher} from "../../../../../../../vendor/pckg/helpers-js/webpack/orm.js";
+import {Fetcher} from "pckg-orm/src/orm";
 import {Clients} from "../../../../../public/orm/clients";
 import {Projects} from "../../../../../public/orm/projects";
 
