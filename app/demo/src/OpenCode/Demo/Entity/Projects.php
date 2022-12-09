@@ -7,7 +7,6 @@ use Pckg\Database\Repository\Custom;
 
 class Projects extends Entity
 {
-
     protected $repositoryName = Custom::class;
 
     public function getCustomRepositoryCollection()

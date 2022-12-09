@@ -8,7 +8,6 @@ use Pckg\Framework\Provider;
 
 class Demo extends Provider
 {
-
     public function routes()
     {
         return [

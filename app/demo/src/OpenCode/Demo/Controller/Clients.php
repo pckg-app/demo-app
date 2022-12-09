@@ -7,7 +7,6 @@ use OpenCode\Demo\Entity\Projects;
 
 class Clients
 {
-
     public function getIndexAction()
     {
         return [

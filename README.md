@@ -43,14 +43,13 @@ Open in web browser.
 `https://localhost:8072/`
 
 # Directory structure
-
-`vendor`, `components` and `node_modules` - dependency managers directories
-`config` - root project configuration
-`www` - directory that will be exposed to the internet
-`storage` - directory for framework, cache, uploads, tmp and other private and public files
-`app/demo/config` - app configuration
-`app/demo/src` - app source files
-`app/demo/public` - static assets (private, can be mounted to `www`)
+- `vendor`, `components` and `node_modules` - dependency managers directories
+- `www` - directory that will be exposed to the internet
+- `storage` - directory for framework, cache, uploads, tmp and other private and public files
+- `config` - root project configuration
+- `app/$app/config` - app configuration
+- `app/$app/src` - app source files
+- `app/$app/public` - static assets (private, can be mounted to `www`)
 
 _Note: it is recommended to disable discovery of dependency manager directories, `www` and `storage`._
 

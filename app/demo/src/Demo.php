@@ -9,7 +9,6 @@ use Pckg\Manager\Provider\Manager;
 // @codingStandardsIgnoreLine
 class Demo extends Provider
 {
-
     public function providers()
     {
         return [

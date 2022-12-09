@@ -4,7 +4,6 @@ namespace OpenCode\Demo\Controller;
 
 class Demo
 {
-
     public function postIndexAction()
     {
         return [
